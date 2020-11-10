@@ -14,6 +14,14 @@
     background-size: cover;
 }
 
+@media screen and (max-width: 500px) {
+    .banner {
+        width: 85%;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
+
 .banner.dogs {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url("https://images.unsplash.com/photo-1487341290491-1081724e5844?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80") no-repeat;
     background-position: 60% 15%;
