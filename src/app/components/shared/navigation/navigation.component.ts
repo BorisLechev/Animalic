@@ -14,6 +14,8 @@ export class NavigationComponent {
   }
 
   closeSidebar() {
-    document.getElementById('menu-drop').style.transform = 'translateX(-100%)';
+    if (window.innerWidth <= 1023) {
+      document.getElementById('menu-drop').style.transform = 'translateX(-100%)';
+    }
   }
 }
