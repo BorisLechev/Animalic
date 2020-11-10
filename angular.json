@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Pets": {
+    "Animalic": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Pets",
+            "outputPath": "dist/Animalic",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -70,18 +70,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Pets:build"
+            "browserTarget": "Animalic:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Pets:build:production"
+              "browserTarget": "Animalic:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Pets:build"
+            "browserTarget": "Animalic:build"
           }
         },
         "test": {
@@ -118,15 +118,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Pets:serve"
+            "devServerTarget": "Animalic:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Pets:serve:production"
+              "devServerTarget": "Animalic:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "Pets"
+  "defaultProject": "Animalic"
 }
