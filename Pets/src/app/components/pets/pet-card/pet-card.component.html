@@ -1,0 +1,20 @@
+<section class="wrapper-item">
+    <section class="wrapper-item-inner">
+        <section class="image-container" routerLink="/pet/{{ pet.id }}">
+            <a class="image-link" title="{{ pet.breed }}">
+                <img class="pet-image front" src="{{ pet.imageSrc }}" alt="{{ pet.breed }}">
+                <img class="pet-image back" src="{{ pet.imageSrc }}" alt="{{ pet.breed }}">
+                <section class="image-overlay"></section>
+            </a>
+        </section>
+    </section>
+    <section class="pet-info">
+        <header>
+            <h6 class="pet-name">
+                <a title="{{ pet.breed }}">
+                    <span>{{ pet.breed }}</span>
+                </a>
+            </h6>
+        </header>
+    </section>
+</section>

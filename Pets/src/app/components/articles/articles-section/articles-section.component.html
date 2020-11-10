@@ -1,0 +1,12 @@
+<div class="main">
+    <section class="container">
+        <section class="row">
+            <section class="inner-row">
+                <article *ngFor="let article of articles" class="card-container">
+                    <app-article [article]="article"></app-article>
+                </article>
+            </section>
+        </section>
+    </section>
+</div>
+<app-team></app-team>
