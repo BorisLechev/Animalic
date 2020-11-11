@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ArticlesSectionComponent } from './components/articles/articles-section/articles-section.component';
+import { ContactsComponent } from './components/contacts/contacts.component';
 import { ErrorPageComponent } from './components/error-page/error-page.component';
 import { HomeComponent } from './components/home/home.component';
 import { PetShopsSectionComponent } from './components/pet-shops/pet-shops-section/pet-shops-section.component';
@@ -18,12 +19,13 @@ const routes: Routes = [
   { path: 'pet/:id', component: PetDetailsComponent },
   { path: "veterinarians", component: VeterinariansSectionComponent },
   { path: "petshops", component: PetShopsSectionComponent },
+  { path: "contacts", component: ContactsComponent },
   { path: 'error', component: ErrorPageComponent },
   { path: '**', redirectTo: 'error' },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled' })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
