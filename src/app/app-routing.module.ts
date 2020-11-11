@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { ArticlesSectionComponent } from './components/articles/articles-section/articles-section.component';
 import { ContactsComponent } from './components/contacts/contacts.component';
 import { ErrorPageComponent } from './components/error-page/error-page.component';
+import { EventsSectionComponent } from './components/events/events-section/events-section.component';
 import { HomeComponent } from './components/home/home.component';
 import { PetShopsSectionComponent } from './components/pet-shops/pet-shops-section/pet-shops-section.component';
 import { ListOfPetSpeciesComponent } from './components/pets/list-of-pet-species/list-of-pet-species.component';
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'pet/:id', component: PetDetailsComponent },
   { path: "veterinarians", component: VeterinariansSectionComponent },
   { path: "petshops", component: PetShopsSectionComponent },
+  { path: "events", component: EventsSectionComponent },
   { path: "contacts", component: ContactsComponent },
   { path: 'error', component: ErrorPageComponent },
   { path: '**', redirectTo: 'error' },

@@ -13,8 +13,8 @@
                             </section>
                         </a>
                     </main>
-                    <article class="items-col" *ngFor="let petShop of petShops;">
-                        <app-pet-shop-card *ngIf="petShop.town.toLowerCase() === 'софия'" [petShop]="petShop"></app-pet-shop-card>
+                    <article class="items-col" *ngFor="let event of events;">
+                        <app-event-card *ngIf="event.town.toLowerCase() === 'софия'" [event]="event"></app-event-card>
                     </article>
                     <main class="banners">
                         <a>
@@ -26,8 +26,8 @@
                             </section>
                         </a>
                     </main>
-                    <article class="items-col" *ngFor="let petShop of petShops;">
-                        <app-pet-shop-card *ngIf="petShop.town.toLowerCase() === 'варна'" [petShop]="petShop"></app-pet-shop-card>
+                    <article class="items-col" *ngFor="let event of events;">
+                        <app-event-card *ngIf="event.town.toLowerCase() === 'варна'" [event]="event"></app-event-card>
                     </article>
                     <main class="banners">
                         <a>
@@ -39,8 +39,8 @@
                             </section>
                         </a>
                     </main>
-                    <article class="items-col" *ngFor="let petShop of petShops;">
-                        <app-pet-shop-card *ngIf="petShop.town.toLowerCase() === 'пловдив'" [petShop]="petShop"></app-pet-shop-card>
+                    <article class="items-col" *ngFor="let event of events;">
+                        <app-event-card *ngIf="event.town.toLowerCase() === 'пловдив'" [event]="event"></app-event-card>
                     </article>
                 </section>
             </section>

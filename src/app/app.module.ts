@@ -22,6 +22,8 @@ import { PetCardComponent } from './components/pets/pet-card/pet-card.component'
 import { ListOfPetSpeciesComponent } from './components/pets/list-of-pet-species/list-of-pet-species.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
 import { ContactsComponent } from './components/contacts/contacts.component';
+import { EventsSectionComponent } from './components/events/events-section/events-section.component';
+import { EventCardComponent } from './components/events/event-card/event-card.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +47,8 @@ import { ContactsComponent } from './components/contacts/contacts.component';
     PetShopsSectionComponent,
     PetShopCardComponent,
     ContactsComponent,
+    EventsSectionComponent,
+    EventCardComponent,
   ],
   imports: [
     BrowserModule,
