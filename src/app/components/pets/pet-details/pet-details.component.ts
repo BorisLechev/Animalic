@@ -31,5 +31,4 @@ export class PetDetailsComponent implements OnInit {
     this.petId = +this.route.snapshot.params['id'];
     this.pet = this.pets.find(pet => pet.id === this.petId);
   }
-
 }

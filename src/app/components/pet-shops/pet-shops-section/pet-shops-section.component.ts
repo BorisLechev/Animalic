@@ -23,5 +23,4 @@ export class PetShopsSectionComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }

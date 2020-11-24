@@ -10,10 +10,9 @@ import { PetShopModel } from '../../shared/models/PetShopModel';
 export class PetShopCardComponent implements OnInit {
   @Input('petShop')
   petShop: PetShopModel;
-  // petUrl: string = "https://zoomagazin.bg/";
+
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }
